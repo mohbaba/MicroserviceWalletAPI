@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="80c60917-beb4-48aa-8fd1-25d18d6f8b27" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/org/mohservices/JWTAuthConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/org/mohservices/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/application/data/responses/UserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/application/ports/input/identity_manager_usecases/AssignRoleUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/application/ports/input/identity_manager_usecases/DeleteUserUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/application/ports/input/identity_manager_usecases/ForgotPasswordUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/application/ports/input/identity_manager_usecases/GetUserUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/application/ports/input/identity_manager_usecases/LoginUserUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/application/ports/input/identity_manager_usecases/RegisterUserUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/application/ports/output/AuthOutputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/application/ports/output/UserOutputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/domain/exceptions/IdentityServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/domain/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/domain/services/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/domain/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/input/dtos/AuthUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/input/dtos/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/input/rest/IdentityManagerRestAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/input/rest/data/requests/AuthLoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/input/rest/data/requests/RegisterUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/input/rest/data/responses/LoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/input/rest/data/responses/UserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/input/rest/mappers/UserRestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/KeycloakAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/UserPersistenceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/customizedExceptions/UserExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/customizedExceptions/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/customizedExceptions/data/CustomizedExceptionsAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/customizedExceptions/data/responses/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/eventpublisher/EventProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/eventpublisher/UserCreatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/eventpublisher/mappers/EventMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/persistence/entities/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/persistence/mappers/UserPersistenceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/adapters/output/persistence/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/config/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/mohservices/identity/infrastructure/config/KeycloakConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/test/java/com/mohservices/identity/domain/services/AuthServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identity-service/src/test/java/com/mohservices/identity/domain/services/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/data/requests/UpdatePinRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/data/responses/GetWalletResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/data/responses/TransactionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/ports/input/transactionusecases/GetAllTransactionsUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/ports/input/transactionusecases/GetTransactionUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/ports/input/walletusecases/ChangePinUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/ports/input/walletusecases/CreateWalletUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/ports/input/walletusecases/GetBalanceUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/ports/input/walletusecases/GetWalletUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/ports/output/TransactionOutputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/ports/output/UserOutputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/application/ports/output/WalletOutputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/domain/exceptions/ForbiddenTransactionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/domain/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/domain/models/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/domain/models/TransactionStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/domain/models/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/domain/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/domain/models/Wallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/domain/services/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/domain/services/WalletService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/input/eventlistener/EventConsumerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/input/eventlistener/UserCreatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/input/eventlistener/mapper/EventMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/input/rest/TransactionRestAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/input/rest/WalletRestAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/input/rest/data/requests/CreateWalletRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/input/rest/data/responses/CreateWalletResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/input/rest/mappers/TransactionRestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/input/rest/mappers/UserRestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/input/rest/mappers/WalletRestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/TransactionPersistenceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/UserPersistenceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/WalletPersistenceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/customizedExceptions/IncorrectPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/customizedExceptions/TransactionNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/customizedExceptions/WalletException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/customizedExceptions/WalletNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/customizedExceptions/data/CustomizedExceptionsAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/customizedExceptions/data/response/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/persistence/entities/TransactionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/persistence/entities/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/persistence/entities/WalletEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/persistence/mappers/TransactionPersistenceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/persistence/mappers/UserPersistenceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/persistence/mappers/WalletPersistenceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/persistence/repositories/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/persistence/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/adapters/output/persistence/repositories/WalletRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/java/org/payment_services/wallet/infrastucture/config/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/main/resources/db/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/test/java/org/payment_services/wallet/domain/services/TransactionServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/test/java/org/payment_services/wallet/domain/services/WalletServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/test/java/org/payment_services/wallet/infrastucture/adapters/input/rest/TransactionRestAdapterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet-service/src/test/java/org/payment_services/wallet/infrastucture/adapters/input/rest/WalletRestAdapterTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2oUvAxWebRWGEEUeVZE28CZXsqX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.generated-requests | #22.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #24.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthServiceTest.createUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.KeycloakServiceTest.createUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.KeycloakServiceTest.createUserWithIncorrectMail.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionRestAdapterTest.getAllTransactions.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionRestAdapterTest.getTransaction.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionRestAdapterTest.getTransactionsByEmail.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.createUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WalletRestAdapterTest.getBalance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WalletRestAdapterTest.getWallet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WalletRestAdapterTest.testUpdatePassword.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WalletRestAdapterTest.testUpdatePasswordWithWrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WalletServiceTest.createWallet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WalletServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WalletServiceTest.getNonExistingWalletExpectExceptionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WalletServiceTest.getWalletTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.identity [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.identity [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.identity-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.identity-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.identity-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.pocket-api-services [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.pocket-api-services [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.pocket-api-services [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wallet-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wallet-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wallet-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wallet-service [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.IdentityApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.WalletApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ENVY/Desktop/Springboot/Hexagonal-Architecture/microservices/wallet-service/src/main/java/org/payment_services/Main.java&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.payment_services.wallet.infrastucture.adapters.output" />
+      <recent name="com.mohservices.identity.infrastructure.adapters.output.customizedExceptions" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.payment_services.wallet.domain.services" />
+      <recent name="org.payment_services.wallet.infrastucture.adapters.input.rest" />
+      <recent name="com.mohservices.identity.domain.services" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TransactionRestAdapterTest.getTransactionsByEmail">
+    <configuration name="TransactionRestAdapterTest.getAllTransactions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wallet-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.payment_services.wallet.infrastucture.adapters.input.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.payment_services.wallet.infrastucture.adapters.input.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.payment_services.wallet.infrastucture.adapters.input.rest.TransactionRestAdapterTest" />
+      <option name="METHOD_NAME" value="getAllTransactions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionRestAdapterTest.getTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wallet-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.payment_services.wallet.infrastucture.adapters.input.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.payment_services.wallet.infrastucture.adapters.input.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.payment_services.wallet.infrastucture.adapters.input.rest.TransactionRestAdapterTest" />
+      <option name="METHOD_NAME" value="getTransaction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionRestAdapterTest.getTransactionsByEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wallet-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.payment_services.wallet.infrastucture.adapters.input.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.payment_services.wallet.infrastucture.adapters.input.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.payment_services.wallet.infrastucture.adapters.input.rest.TransactionRestAdapterTest" />
+      <option name="METHOD_NAME" value="getTransactionsByEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WalletRestAdapterTest.testUpdatePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wallet-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.payment_services.wallet.infrastucture.adapters.input.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.payment_services.wallet.infrastucture.adapters.input.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.payment_services.wallet.infrastucture.adapters.input.rest.WalletRestAdapterTest" />
+      <option name="METHOD_NAME" value="testUpdatePassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WalletRestAdapterTest.testUpdatePasswordWithWrongPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wallet-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.payment_services.wallet.infrastucture.adapters.input.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.payment_services.wallet.infrastucture.adapters.input.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.payment_services.wallet.infrastucture.adapters.input.rest.WalletRestAdapterTest" />
+      <option name="METHOD_NAME" value="testUpdatePasswordWithWrongPassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TransactionRestAdapterTest.getTransactionsByEmail" />
+        <item itemvalue="JUnit.TransactionRestAdapterTest.getAllTransactions" />
+        <item itemvalue="JUnit.TransactionRestAdapterTest.getTransaction" />
+        <item itemvalue="JUnit.WalletRestAdapterTest.testUpdatePasswordWithWrongPassword" />
+        <item itemvalue="JUnit.WalletRestAdapterTest.testUpdatePassword" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="80c60917-beb4-48aa-8fd1-25d18d6f8b27" name="Changes" comment="" />
+      <created>1730936832131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730936832131</updated>
+      <workItem from="1730936833270" duration="3798000" />
+      <workItem from="1730941870466" duration="929000" />
+      <workItem from="1730942835332" duration="620000" />
+      <workItem from="1730943962849" duration="13570000" />
+      <workItem from="1730988389270" duration="33613000" />
+      <workItem from="1731244365080" duration="14641000" />
+      <workItem from="1731263054526" duration="47631000" />
+      <workItem from="1731467349930" duration="103436000" />
+      <workItem from="1732263802050" duration="4764000" />
+      <workItem from="1732892152032" duration="1267000" />
+      <workItem from="1733992837203" duration="2283000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identity-service/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/wallet-service/src/main/java/org/mohservices/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/wallet-service/src/main/java/org/payment-services/Main.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
